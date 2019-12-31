@@ -1,4 +1,5 @@
 # web
+github演示地址：https://sampleex.github.io/web/borderlands.html
 # borderlands
   页面本项目主页比较美观，对整体网页布局设计比较好，整体的一个静态实现；
   在页面最下方有：联系我们，角色详情，跑马灯跳转链接，可跳转对应界面；
