@@ -1,0 +1,294 @@
+html {background:#09090b url(/pic/bg.jpg) center 542px no-repeat; overflow-y:scroll;}
+body {margin:0; padding:0; min-width:1200px; color:#000; font-size:14px; font-family:'Microsoft YaHei',SimSun,Arial,Tahoma,Helvetica;}
+img {border:0;vertical-align:middle;}
+a {color:#888;text-decoration:none;cursor:pointer;}
+a:hover {color:#fff;}
+a:focus {outline:none;}
+ul {margin:0;padding:0;list-style-type:none;}
+ul li {list-style-type:none;vertical-align:middle;}
+div,ul,li {overflow:hidden;}
+input {outline:0;}
+p,h3,h4,h5,h6 {margin:0;}
+
+.none {display:none;}
+.block {display:block;}
+
+/*全站导航*/
+#QZnav {min-width:1200px; background-color:#151515;}/*背景色*/
+#QZnav .topbar {width:1200px;}
+#QZnav i {color:#595959;}/*分割线*/
+#QZnav .alik {color:#ccc;}/*链接文字色*/
+#QZnav .alik:hover,#QZnav .cur .alik {color:#fff;}/*链接hover色*/
+
+/*全站导航*/
+.QZnav a,.QZnav span,.QZnav{font-size:12px;}
+.QZnav {width:100%; min-width:1100px; height:36px; text-align:left; background-color:#f2f2f3; overflow:visible; position:relative; z-index:9999;}
+.QZnav {box-shadow:0px 0px 1px 0px rgba(0,0,0,0.3);}
+.QZnav a {color:#444; text-decoration:none;}
+.QZnav a:hover {text-decoration:none;}
+.topbar {margin:0 auto; width:1100px; height:36px; color:#444; font-size:12px; font-family:'Microsoft YaHei'; overflow:visible;}
+/*左*/
+.topbar1 {float:left; width:auto; height:36px; overflow:hidden;}
+.topbar1 .QZ-home {float:left; width:auto; height:36px;}
+.topbar1 .QZ-nav {float:left; width:auto; height:36px;}
+.topbar1 a {float:left; display:inline-block; width:auto; height:36px; line-height:36px; color:#444;}
+.topbar1 a.ymxk {padding-left:14px; background:url(//image.gamersky.com/webimg15/qznav.png) 0 11px no-repeat;}
+.topbar1 a:hover {color:#e23703;}
+.topbar1 i {float:left; display:inline-block; width:10px; height:36px; line-height:36px; color:#c5c5c5; font-family:SimSun; font-style:normal; text-align:center;}
+/*右*/
+.topbar2 {float:right; width:auto; height:36px; overflow:visible;}
+.topbar2 i {float:left; display:inline-block; width:8px; height:22px; line-height:22px; color:#c5c5c5; font-family:SimSun; font-style:normal; text-align:center;}
+.topbar2 span.navtt {float:left; display:inline-block; width:auto; height:29px; position:relative;}
+.topbar2 span.navtt p {margin:0;}
+.topbar2 span.navtt p.alik {float:none; padding:5px 3px 8px; display:inline; line-height:22px; color:#444; font-size:12px; cursor:pointer;}
+.topbar2 span.navtt p.alik.app {padding-left:18px; background:url(//image.gamersky.com/webimg15/qznav.png) 0 -112px no-repeat;}
+.topbar2 span.navtt.cur p.alik {color:#e22200; border-bottom:2px solid #ff5400;}
+.topbar2 span.navtt.cur .topbar-menu {display:block; animation:fadeInDown .25s ease-in-out 0s alternate;}
+.topbar2 span.navtt.cur .topbar-tz {display:block; animation:fadeInDown .25s ease-in-out 0s alternate;}
+.topbar2 .userLogin {float:left; width:auto; height:36px; overflow:visible;}
+.topbar2 .userLogin a.tongzhi {float:left; padding:0 6px; display:inline-block; width:auto; height:22px; line-height:22px; color:#444;}
+.topbar2 .userLogin a.tongzhi span {float:none;}
+.topbar2 .userLogin a.tongzhi span.tz {padding-left:3px; display:inline-block; height:14px; line-height:14px; vertical-align:middle;}
+.topbar2 .userLogin a.tongzhi span.tz em {float:left; display:inline-block; height:14px; background:url(//image.gamersky.com/webimg13/user/tz.png) no-repeat;}
+.topbar2 .userLogin a.tongzhi span.tz em.l {width:7px; background-position:0 0;}
+.topbar2 .userLogin a.tongzhi span.tz em.r {width:5px; background-position:-21px 0;}
+.topbar2 .userLogin a.tongzhi span.tz .num {float:left; display:inline-block; width:auto; height:14px; line-height:13px; color:#f2f2f3; font-size:12px; background-color:#e23703;}
+.topbar2 .userLogin a.tongzhi:hover {color:#e23703;}
+.topbar2 .notice {float:left; padding-top:7px; width:auto; height:29px; overflow:visible;}
+.topbar2 .noLogin {display:none; float:left; padding-top:7px; width:auto; height:29px; color:#d2d2d2; overflow:visible;}
+.topbar2 .noLogin a {float:left; display:inline-block; width:auto; height:22px; line-height:22px; color:#444;}
+.topbar2 .noLogin a.Login {margin-right:10px; padding-left:33px; background:url(//image.gamersky.com/webimg15/qznav.png) 6px -72px no-repeat;}
+.topbar2 .noLogin a:hover {color:#e23703;}
+.topbar2 .okLogin {display:none; float:left; padding-top:7px; width:auto; height:29px; overflow:visible; position:relative;}
+.topbar2 .okLogin a.uname {clear:both; padding:0 15px 0 5px; display:inline-block; width:auto; max-width:101px; height:22px; line-height:22px;}
+.topbar2 .okLogin a.uname {white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.topbar2 .okLogin a.uname {background:url(//image.gamersky.com/webimg13/user/user-v.png) right center no-repeat;}
+.topbar2 .okLogin a.uname img {float:left; margin-right:7px; width:22px; height:22px; border-radius:50%; vertical-align:middle;}
+.topbar2 .okLogin .userLayer {display:none; padding:0 10px 10px; width:262px; height:auto; overflow:visible; position:absolute; top:28px; right:-100px; z-index:99999;}
+.topbar2 .okLogin .userLayer .zx {margin-bottom:-1px; width:262px; height:9px; position:relative; background:url(//image.gamersky.com/webimg13/user/userLayer.png) center 0 no-repeat;}
+.topbar2 .okLogin.cur a.uname {color:#e23703;}
+.topbar2 .okLogin.cur .userLayer {display:block; animation:fadeInDown .25s ease-in-out 0s alternate;}
+.topbar2 .okLogin .userLayer.sm {right:-10px;}
+.topbar2 .okLogin .userLayer.sm .zx {background-position:210px 0;}
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-5px);}100%{opacity:1;transform:translateY(0);}}
+
+/*网站导航*/
+.topbar-navul {margin:15px 0; padding:0 20px; width:378px; height:146px; list-style-type:none; overflow:hidden;}
+.topbar-navul li {float:left; width:188px; height:146px; border-left:1px solid #515151; overflow:hidden; list-style-type:none;}
+.topbar-navul li h3 {margin:0 0 10px -1px; _margin-left:-2px; padding-left:15px; width:160px; height:16px; line-height:18px; color:#ddd; font-size:13px; font-family:'Microsoft YaHei';}
+.topbar-navul li h3.red {border-left:3px solid #e22200;}
+.topbar-navul li h3.blue {border-left:3px solid #1f79d5;}
+.topbar-navul li .lik {float:left; width:94px; height:auto;}
+.topbar-navul li .lik a {padding:0 0 0 18px; display:inline-block; width:auto; height:24px; line-height:24px;}
+.topbar-navul li .lik a.al {color:#bbb;}
+.topbar-navul li .lik a.al_red {color:#ff5400;}
+.topbar-navul li .lik a.al_blue {color:#009cff;}
+.topbar-navul li .lik a:hover {color:#fff; text-decoration:underline;}
+
+
+
+.center {margin:0 auto; width:1200px; overflow:visible;}
+
+
+.Mid3 {height:803px; background:url(//pic/m3bg.png) center 0 no-repeat;}
+
+.Mid7 {height:572px; background:url(//pic/m7bg.png) center 0 no-repeat;}
+
+.Mid3,.Mid5,.Mid7 {width:100%; min-width:1200px; max-width:1920px; overflow:hidden;}
+
+
+
+
+
+.Midcon {margin:0 auto; padding:18px; width:1164px; height:auto; background-image:url(//image.gamersky.com/webimg13/s_zq/borderlands3/mbg.png);}
+.Mid3 .Midcon {padding:0; height:803px; background:none; position:relative; z-index:2;}
+.Mid5 .Midcon {padding:0; height:501px; background:none; position:relative; z-index:2;}
+.Mid7 .Midcon {padding:0; height:572px; background:none; position:relative; z-index:2;}
+
+
+
+
+/**********************第三区块**********************/
+.Mid3 .m3nav {width:100%; height:42px; font-size:0; text-align:center; position:absolute; left:0; top:60px;}
+.Mid3 .m3nav a {margin:0 17px; display:inline-block; width:140px; height:42px; line-height:42px; color:#8cb0c8; font-size:16px; font-weight:700;}
+.Mid3 .m3nav a {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/m3-nav1-a1.png) no-repeat;}
+.Mid3 .m3nav a.cur {color:#0d161a; background-position:0 -42px;}
+.Mid3 .m3con {width:100%; height:630px; position:absolute; left:0; top:130px;}
+.Mid3 .nav1tab {width:auto; height:480px; position:absolute; left:0; top:0;}
+.Mid3 .nav1tab a {float:left; margin-right:3px; width:150px; height:480px; position:relative;}
+.Mid3 .nav1tab a img {display:block; width:150px; height:480px;}
+.Mid3 .nav1tab a i {display:block; width:150px; height:480px; position:absolute; left:0; top:0; border-radius:5px;}
+.Mid3 .nav1tab a i {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/m3-mk1.png) no-repeat;}
+.Mid3 .nav1tab a p {width:100%; height:50px; line-height:50px; text-align:center; color:#35749f; font-size:24px; letter-spacing:5px; word-spacing:5px; position:absolute; left:0; bottom:0;}
+.Mid3 .nav1tab a.cur i {background-position:-150px 0;}
+.Mid3 .nav1tab a.cur p {color:#0d3d5e;}
+.Mid3 .con1box {width:546px; height:480px; overflow:visible; position:absolute; right:0; top:0; background-image:url();}
+.Mid3 .con1box .slide {width:273px; height:457px; position:absolute; left:15px; top:11px;}
+.Mid3 .con1box .slide .Bimg {width:273px; height:457px; position:relative;}
+.Mid3 .con1box .slide .Bimg li {float:left; width:273px; height:457px; position:relative;}
+.Mid3 .con1box .slide .Bimg li.bg0.blue {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg0-blue.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg0.green {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg0-green.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg0.red {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg0-red.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg1.blue {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg1-blue.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg1.green {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg1-green.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg1.red {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg1-red.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg2.blue {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg2-blue.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg2.green {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg2-green.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg2.red {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg2-red.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg3.blue {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg3-blue.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg3.green {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg3-green.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li.bg3.red {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/bg3-red.png) center no-repeat;}
+.Mid3 .con1box .slide .Bimg li h4 {width:100%; line-height:30px; font-size:14px; font-weight:400; text-align:center; position:absolute; left:0; bottom:16px;}
+.Mid3 .con1box .slide .Bimg li.blue h4 {color:#afdbfe;}
+.Mid3 .con1box .slide .Bimg li.green h4 {color:#f6dd9b;}
+.Mid3 .con1box .slide .Bimg li.red h4 {color:#f6dd9b;}
+.Mid3 .con1box .slide .Bimg li a {display:block; width:55px; height:55px; position:absolute;}
+.Mid3 .con1box .slide .Bimg li a img {display:block; width:28px; height:28px; position:absolute; left:50%; top:50%; margin:-14px 0 0 -14px;}
+.Mid3 .con1box .slide .Bimg li a.line1 {top:0;}
+.Mid3 .con1box .slide .Bimg li a.line2 {top:56px;}
+.Mid3 .con1box .slide .Bimg li a.line3 {top:113px;}
+.Mid3 .con1box .slide .Bimg li a.line4 {top:178px;}
+.Mid3 .con1box .slide .Bimg li a.line5 {top:240px;}
+.Mid3 .con1box .slide .Bimg li a.line6 {top:298px;}
+.Mid3 .con1box .slide .Bimg li a.line7 {top:355px;}
+.Mid3 .con1box .slide .Bimg li a.row1 {left:0;}
+.Mid3 .con1box .slide .Bimg li a.row2 {left:57px;}
+.Mid3 .con1box .slide .Bimg li a.row3 {left:111px;}
+.Mid3 .con1box .slide .Bimg li a.row4 {left:164px;}
+.Mid3 .con1box .slide .Bimg li a.row5 {right:0;}
+.Mid3 .con1box .slide .Bimg li a[data-m='m1'] {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/icon-m1.png) no-repeat;}
+.Mid3 .con1box .slide .Bimg li a[data-m='m2'] {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/icon-m2.png) no-repeat;}
+.Mid3 .con1box .slide .Bimg li a[data-m='m3'] {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/icon-m3.png) no-repeat;}
+.Mid3 .con1box .slide .Bimg li a[data-m='m4'] {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/icon-m4.png) no-repeat;}
+.Mid3 .con1box .slide .Bimg li a.cur {background-position:0 -55px;}
+.Mid3 .con1box .slide .Simg {display:none;}
+.Mid3 .con1box .slide a.btn {display:block; width:38px; height:42px; position:absolute; bottom:40px;}
+.Mid3 .con1box .slide a.btn {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/m3-slide-btn.png) no-repeat;}
+.Mid3 .con1box .slide a.btn.Prev {left:0; background-position:0 0;}
+.Mid3 .con1box .slide a.btn.Next {right:0; background-position:-38px 0;}
+.Mid3 .con1box .box1txt {width:220px; overflow:visible; position:absolute; right:15px; top:40px;}
+.Mid3 .con1box .box1txt .img {margin-left:-10px; padding-top:20px; width:106px; height:110px; overflow:visible; position:relative;}
+.Mid3 .con1box .box1txt .img {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n0/icon-m-cur.png) no-repeat;}
+.Mid3 .con1box .box1txt .img.m1 {background-position:0 0;}
+.Mid3 .con1box .box1txt .img.m2 {background-position:-106px 0;}
+.Mid3 .con1box .box1txt .img.m3 {background-position:-212px 0;}
+.Mid3 .con1box .box1txt .img.m4 {background-position:-318px 0;}
+.Mid3 .con1box .box1txt .img img {margin:0 auto; display:block; width:64px; height:64px;}
+.Mid3 .con1box .box1txt .img h4 {width:220px; line-height:20px; color:#fef378; font-size:14px; text-indent:10px; position:absolute; left:0; bottom:3px;}
+.Mid3 .con1box .box1txt .txt p {line-height:26px;}
+.Mid3 .con1box .box1txt .txt p.p0 {height:20px;}
+.Mid3 .con1box .box1txt .txt p.p1 {color:#d7b430;}
+.Mid3 .con1box .box1txt .txt p.p2 {color:#fef378;}
+.Mid3 .con1box .infor {width:1164px; height:auto; position:absolute; right:0; top:500px;}
+.Mid3 .con1box .infor h4 {line-height:30px; color:#b6d7ee; font-size:16px; font-weight:400;}
+.Mid3 .con1box .infor p {line-height:28px; color:#a1c2d8; font-size:16px;}
+
+.Mid3 .nav2tab {width:137px; height:auto; position:absolute; left:0; top:20px;}
+.Mid3 .nav2tab a {margin-bottom:14px; display:block; width:137px; height:47px; background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n1/a1.png) no-repeat;}
+.Mid3 .nav2tab a.a0 {background-position:0 0;}
+.Mid3 .nav2tab a.a1 {background-position:0 -47px;}
+.Mid3 .nav2tab a.a2 {background-position:0 -94px;}
+.Mid3 .nav2tab a.a3 {background-position:0 -141px;}
+.Mid3 .nav2tab a.a4 {background-position:0 -188px;}
+.Mid3 .nav2tab a.a5 {background-position:0 -235px;}
+.Mid3 .nav2tab a.a6 {background-position:0 -282px;}
+.Mid3 .nav2tab a.a7 {background-position:0 -329px;}
+.Mid3 .nav2tab a.a8 {background-position:0 -376px;}
+.Mid3 .nav2tab a.a9 {background-position:0 -423px;}
+.Mid3 .nav2tab a.a0.cur {background-position:-137px 0;}
+.Mid3 .nav2tab a.a1.cur {background-position:-137px -47px;}
+.Mid3 .nav2tab a.a2.cur {background-position:-137px -94px;}
+.Mid3 .nav2tab a.a3.cur {background-position:-137px -141px;}
+.Mid3 .nav2tab a.a4.cur {background-position:-137px -188px;}
+.Mid3 .nav2tab a.a5.cur {background-position:-137px -235px;}
+.Mid3 .nav2tab a.a6.cur {background-position:-137px -282px;}
+.Mid3 .nav2tab a.a7.cur {background-position:-137px -329px;}
+.Mid3 .nav2tab a.a8.cur {background-position:-137px -376px;}
+.Mid3 .nav2tab a.a9.cur {background-position:-137px -423px;}
+.Mid3 .con2box {width:1027px; height:auto; position:absolute; right:0; top:20px;}
+.Mid3 .con2box .box2txt {width:100%; height:405px; position:relative;}
+.Mid3 .con2box .box2txt .img {width:730px; height:405px; text-align:center; position:absolute; left:0; top:0;}
+.Mid3 .con2box .box2txt .infor {width:410px; height:405px; position:absolute; right:0; top:0;}
+.Mid3 .con2box .box2txt .infor h4 {line-height:30px; color:#d1ecff; font-size:14px;}
+.Mid3 .con2box .box2txt .infor p {min-height:20px; line-height:24px; color:#89acc6; font-size:14px;}
+.Mid3 .con2box .box2txt.cur .img {animation:bounceIn .5s ease-in-out 0s alternate;}
+.Mid3 .con2box .nav2 {width:100%; height:130px; text-align:center; font-size:0;}
+.Mid3 .con2box .nav2 a {margin:0 10px; display:inline-block; width:232px; height:130px; position:relative; background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n1/a2.png) no-repeat;}
+.Mid3 .con2box .nav2 a img {margin:11px 0; height:108px;}
+.Mid3 .con2box .nav2 a i {display:none; width:218px; height:116px; border:7px solid #3ea8ee; position:absolute; left:0; top:0;}
+.Mid3 .con2box .nav2 a.cur i {display:block;}
+.Mid3 .con2box.cur .box2txt .img {animation:bounceIn .5s ease-in-out 0s alternate;}
+
+.Mid3 .nav3tab {width:146px; height:auto; position:absolute; left:0; top:20px;}
+.Mid3 .nav3tab a {margin-bottom:7px; display:block; width:146px; height:142px; position:relative;}
+.Mid3 .nav3tab a img {display:block; width:146px; height:142px;}
+.Mid3 .nav3tab a i {display:block; width:146px; height:142px; position:absolute; left:0; top:0;}
+.Mid3 .nav3tab a i {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n2/amk.png) no-repeat;}
+.Mid3 .nav3tab a p {width:100%; line-height:30px; color:#0b5e92; font-size:16px; font-weight:700; text-align:center; position:absolute; left:0; bottom:5px;}
+.Mid3 .nav3tab a.cur i {background-position:0 -142px;}
+.Mid3 .nav3tab a.cur p {color:#0b0b0b;}
+.Mid3 .con3box {width:1004px; height:588px; position:absolute; right:0; top:20px;}
+.Mid3 .con3box .image {width:1004px; height:588px; background:url(//image.gamersky.com/webimg15/loading.gif) center 150px no-repeat/50px 50px;}
+.Mid3 .con3box .infor {width:100%; height:250px; position:absolute; left:0; bottom:0; background-image:url(//image.gamersky.com/webimg13/s_zq/borderlands3/data/n2/mk.png);}
+.Mid3 .con3box .infor .img {width:400px; height:250px;}
+.Mid3 .con3box .infor .txt {width:566px; height:220px; position:absolute; bottom:0; right:40px;}
+.Mid3 .con3box .infor .txt p {line-height:36px; color:#ababab; font-size:14px;}
+.Mid3 .con3box.cur .infor {animation:fadeInDown .5s ease-in-out 0s alternate;}
+
+
+/**********************第七区块**********************/
+.Mid7 h3 {margin:55px 0 15px; width:100%; height:40px; line-height:40px; color:#2e8ac7; font-size:24px; text-align:center;}
+.Mid7 .nav {width:100%; height:138px; text-align:center; font-size:0;}
+.Mid7 .nav a {margin:0 8px; display:inline-block; width:88px; height:112px; position:relative; background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/m7-a.jpg) 0 bottom no-repeat;}
+.Mid7 .nav a img {display:block; width:88px; height:88px;}
+.Mid7 .nav a p {padding-top:88px; width:100%; height:24px; line-height:24px; color:#85c2ea; font-size:14px; text-align:center; position:absolute; left:0; bottom:0;}
+.Mid7 .nav a.cur {background-position:-88px bottom;}
+.Mid7 .nav a.cur p {color:#111; background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/m7-acur.png) no-repeat;}
+.Mid7 .con {width:1164px; height:232px; background-color:#25415c; position:relative;}
+.Mid7 .con .infor {width:870px; height:232px; position:absolute; right:0; top:0; background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/m7mk.png) no-repeat;}
+.Mid7 .con .infor-txt {width:454px; height:200px; position:absolute; right:30px; top:30px;}
+.Mid7 .con .infor-txt h4 {height:30px; line-height:30px; color:#b6d7ee; font-size:16px; font-weight:400;}
+.Mid7 .con .infor-txt p {line-height:28px; color:#a1c2d8; font-size:16px;}
+
+/**********************第八区块**********************/
+.Mid8 .imglist1 {width:1182px; height:auto; color:#888;}
+.Mid8 .imglist1 li {float:left; width:295px; height:196px;}
+.Mid8 .imglist1 li a {display:block; width:280px; height:auto; font-size:14px; text-align:center;}
+.Mid8 .imglist1 li a img {margin-bottom:10px; display:block;}
+.Mid8 .imglist1 li a p {line-height:20px;}
+
+
+/*底部*/
+.Bot {margin-top:40px; width:100%; min-width:1200px; height:auto; background-color:#151515;}
+.Bot .Copyright {margin:0 auto; padding:30px 0; width:1200px; height:auto; line-height:30px; text-align:center; color:#454545; font-size:14px;}
+.Bot .Copyright a {margin:0 5px; color:#454545;}
+.Bot .Copyright a:hover {color:#888;}
+
+
+/*浮动导航*/
+.side_nav {display:none; margin-top:-70px; padding-left:3px; width:100px; height:350px; position:fixed; _position:absolute; top:30%; left:50%; z-index:10000;}
+.side_nav {background:url(//image.gamersky.com/webimg13/s_zq/borderlands3/side_nav.png) 0 center no-repeat;}
+.side_nav li {padding:4px 0; width:100%; height:34px;}
+.side_nav li a {padding:0 12px; display:inline-block; width:auto; height:34px; line-height:34px; color:#8c8f95; font-size:15px;}
+.side_nav li a:hover {color:#2e8ac7;}
+.side_nav li.cur a {color:#2e8ac7; background-image:url(//image.gamersky.com/webimg13/s_zq/borderlands3/mbg.png);}
+
+
+/*从左到右*/
+@-webkit-keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translateX(-100px);}100%{opacity:1;-webkit-transform:translateX(0);}}
+@keyframes fadeInLeft{0%{opacity:0;transform:translateX(-100px);}100%{opacity:1;transform:translateX(0);}}
+/*从右到左*/
+@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px);}100%{opacity:1;-webkit-transform:translateX(0);}}
+@keyframes fadeInRight{0%{opacity:0;transform:translateX(20px);}100%{opacity:1;transform:translateX(0);}}
+/*从小到大*/
+@-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.8);}100%{opacity:1;-webkit-transform:scale(1);}}
+@keyframes bounceIn{0%{opacity:0;transform:scale(.8);}100%{opacity:1;transform:scale(1);}}
+/*从上到下*/
+@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px);}100%{opacity:1;-webkit-transform:translateY(0);}}
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px);}100%{opacity:1;transform:translateY(0);}}
+/*从下到上*/
+@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);}100%{opacity:1;-webkit-transform:translateY(0);}}
+@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
+/*淡出*/
+@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}

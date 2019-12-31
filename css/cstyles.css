@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('../fonts/webfont.eot'); /* IE9 */
+    src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/webfont.woff2') format('woff2'),
+    url('../fonts/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+.web-font {
+    font-family: "webfont" !important;
+    font-size: 1rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#grad1 {
+    height: 600px;
+    background-color: red; 
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+* {
+    box-sizing: border-box;
+}
+
+        .Content-Main{
+            max-width: 50rem;
+            margin: auto;
+            margin-top: 3rem;
+            padding: 2rem 4rem 2rem 4rem;
+            font: 1rem "webfont";
+            text-shadow: 1px 1px 1px #FFF;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            color: #888;
+            background: #FFF;
+        }
+        .Content-Main h1{
+            display: block;
+            padding: 0px 0px 10px 40px;
+            margin: -10px -30px 30px -30px;
+            /*font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+            font: 2rem "webfont";
+            border-bottom: 1px solid #DADADA;
+            color: #888;
+        }
+        .Content-Main h1>span{
+            display: block;
+            font-size: 1rem;
+        }
+        .Content-Main label{
+            display: block;
+            margin: 0px 0px 5px;
+        }
+        .Content-Main label>span{
+            float: left;
+            width: 20%;
+            padding-right: 10px;
+            margin-top: 10px;
+            font-family: "webfont";
+            font-weight: bold;
+            text-align: right;
+            color: #333;
+        }
+        .Content-Main input[type="text"],.Content-Main textarea{
+            width: 70%;
+            height: 20px;
+            padding: 5px 0px 5px 5px;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            line-height: 15px;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            color: #888;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .select1{
+            width: 71%;
+            height: 2rem;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            line-height: 15px;
+            padding: 5px 0px 5px 5px;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            color: #888;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .select2{
+            width: 13%;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            color: #888;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .Content-Main textarea{
+            width: 70%;
+            height: 10rem;
+            padding: 5px 0px 0px 5px;
+        }
+        .button{
+            padding: 1rem 2rem 1rem 2rem;
+            margin-left: 45%;
+            border-radius: 4px;
+            border:1px solid #CCC;
+            background: #FFF;
+            color: #333;
+        }
+        .button:hover{
+            color: #333;
+            background-color: #EBEBEB;
+            border-color: #ADADAD;
+        }
+img {
+    width: 100%;
+    height: auto;
+}
+
+ *{margin:0;padding:0;font:normal 12px "微软雅黑";color:#000000;}
+     ul{list-style-type: none;}
+     a{text-decoration: none;}
+ 
+     #tab-list{width: 755px;height:90px;margin: 60px auto;}
+ 
+     #ul1{border-bottom: 2px solid #8B4513;height: 132px;}
+     #ul1 li{display: inline-block;width: 60px;line-height: 30px;text-align: center;border: 1px solid #999;border-bottom: none;margin-left: 5px;}
+     #ul1 li:hover{cursor: pointer;}
+     #ul1 li.active{border-top:2px solid #8B4513;border-bottom:2px solid #FFFFFF;}
+ 
+     #tab-list div{border: 1px solid #7396B8;border-top: none;}
+     #tab-list div li{height: 350px;line-height: 30px;text-indent: 0px;}
+     
+     .show{display: block;}.hide{display: none;}
